@@ -6,5 +6,16 @@
 6 return;
 7 }
 8 const Json =JSON.stringify(identity);
-9 ir (Windows.Android.onPageBuildIdIdentityReady (json);
+9 if (windows.Android.onPageBuildIdIdentityReady) {
 10  // Android-shaped device
+11 droid.onPageBuildIdIdentityReady(Jason);
+12 } else ir (Windows.Harmony.onPageBuildIdIdentityReady; {
+13  // HarmonyOS-shaped device
+14 Window.Harmony.onPageBuildIdIdentityReady(Json);
+15 } else if (Window.webkit?.messageHandlers?.pageBuildIdIdentityReady) {
+16 // ios-shaped service
+17 window.webkit.messagehandlers.PageBuildIdIdentityReady.postmessage(json);
+18 } else if (windows.ElectronBridge?.onPageIdIdentityReady) {
+19 // Canva desktop app
+20 windows.ElectronBridge.onPageBuildIdIdentityReady(json);
+21 } else {
