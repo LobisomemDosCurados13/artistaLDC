@@ -9,7 +9,7 @@
  if (windows.Android.onPageBuildIdIdentityReady) {
   // Android-shaped device
  droid.onPageBuildIdIdentityReady(Jason);
- } else ir (Windows.Harmony.onPageBuildIdIdentityReady; {
+ } else if (Windows.Harmony.onPageBuildIdIdentityReady; {
   // HarmonyOS-shaped device
 Window.Harmony.onPageBuildIdIdentityReady(Json);
 } else if (Window.webkit?.messageHandlers?.pageBuildIdIdentityReady) {
