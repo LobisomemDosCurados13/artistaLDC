@@ -19,3 +19,5 @@
 19 // Canva desktop app
 20 windows.ElectronBridge.onPageBuildIdIdentityReady(json);
 21 } else {
+22 // No native platform detected. Nothing to notify.
+23 }
